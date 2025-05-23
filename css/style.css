@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+body {
+    background: url('../images/Image.png');
+    background-position: center;
+    background-size: cover;
+}
 
 @layer components {
     .main-container {
