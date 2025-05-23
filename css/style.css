@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+
+@layer components {
+    .main-container {
+        
+        @apply container min-h-screen bg-[url('../images/image.png')] bg-center bg-cover px-28 py-5 relative;
+        
+        nav {
+            @apply flex items-center justify-between;
+        }
+
+        ul {
+            @apply flex text-center;
+        }
+
+        li {
+            @apply list-none inline-block px-5;
+        }
+
+        a {
+            @apply no-underline text-white px-2;
+        }
+
+        .logo {
+            @apply w-40 cursor-pointer;
+        }
+
+        .cart {
+            @apply w-8 cursor-pointer;
+        }
+    }
+
+    .main-content {
+        @apply text-white mt-48 max-w-xl;
+
+        h1 {
+            @apply text-6xl font-semibold leading-normal;
+        }
+
+        .btn-order {
+            @apply bg-yellow-300 rounded-3xl py-3 px-8 font-medium inline-block mr-4;
+            
+            &:hover {
+                @apply bg-transparent border-yellow-300 text-white duration-300 border;
+            }
+        }
+
+    }
+}
