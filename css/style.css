@@ -4,7 +4,7 @@
 @layer components {
     .main-container {
         
-        @apply container min-h-screen bg-[url('../images/image.png')] bg-center bg-cover px-28 py-5 relative;
+        @apply container min-h-screen px-28 py-5 relative;
         
         nav {
             @apply flex items-center justify-between;
