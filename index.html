@@ -7,11 +7,30 @@
     <title>Website with tailwind CSS</title>
     <link rel="stylesheet" href="./css/output.css">
     <style>
-        body {
-            background: url('/images/image.jpg');
-            background-position: center;
-            background-size: cover;
-        }
+       body {
+  background: linear-gradient(
+    135deg,
+    #000000 0%,     /* black */
+    #0a0a0a 10%,    /* near black */
+    #0f172a 20%,    /* blue-950 */
+    #1e293b 30%,    /* slate-800 */
+    #1e3a8a 40%
+  );
+  background-size: 300% 300%;
+  animation: gradient-flow 16s ease infinite;
+  color: white;
+}
+
+@keyframes gradient-flow {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+
     </style>
 </head>
 
